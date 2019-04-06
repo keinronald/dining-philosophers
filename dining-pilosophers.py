@@ -65,7 +65,7 @@ class Philosopher(threading.Thread):
         :return:
         """
         time.sleep(0.1)  # thinking
-        print("Philosopher", self.name, "EATS")
+        print("Philosopher", self.name, "eats")
 
         self.first_fork[0].release()
         print(" R - Philosopher", self.name,
